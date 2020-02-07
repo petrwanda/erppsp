@@ -3,6 +3,16 @@
 Route::group(['namespace' => 'Student'], function() {
     Route::get('/', 'HomeController@index')->name('student.dashboard');
 
+    //book route
+
+    Route::get('/book', 'BookController@index')->name('book.index');
+    // Route::get('/book', 'BookController@student')->name('book.index');
+    Route::get('/book/{id}/edit','BookController@edit')->name('book.edit');
+    Route::get('/book/{id}/delete','BookController@destroy')->name('book.destroy');
+    Route::get('/book/create','BookController@create')->name('book.create');
+    Route::post('/book/create','BookController@store')->name('book.store');
+    Route::post('/book/update','BookController@update')->name('book.update');
+
     // Login
     Route::get('login', 'Auth\LoginController@showLoginForm')->name('student.login');
     Route::post('login', 'Auth\LoginController@login');

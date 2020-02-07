@@ -70,6 +70,11 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
+
+                                  <a class="btn btn-primary" href="{{ route('student.login') }}">
+                                    {{ __('Login') }}
+                                </a>
+
                             </div>
                         </div>
                     </form>

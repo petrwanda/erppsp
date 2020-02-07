@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  </head>
- <body>
+ <body> 
   <div class="container">    
      <br />
      <h3 align="center">Laravel 5.8 - Import Export Data in CSV File</h3>

@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+}); 
 
 Route::get('csv_file', 'CsvFile@index');
 

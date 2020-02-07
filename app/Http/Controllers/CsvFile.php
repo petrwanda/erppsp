@@ -7,7 +7,7 @@ use App\Exports\CsvExport;
 use App\Imports\CsvImport;
 use Maatwebsite\Excel\Facades\Excel;
 
-use App\User;
+use App\User; 
 
 class CsvFile extends Controller
 {

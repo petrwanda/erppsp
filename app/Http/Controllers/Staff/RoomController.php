@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use App\Room;
 use App\Staff;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
 
 class RoomController extends Controller
 {

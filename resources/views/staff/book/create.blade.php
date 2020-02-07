@@ -8,7 +8,7 @@
  -->            <div class="card card-1">
 
                 <div class="card-body">
-                    <h2 class="title">Customer Registration Info</h2>
+                    <h2 class="title">book Registration Info</h2>
 
 
   <div class="row h-100 justify-content-center align-items-center">

@@ -10,7 +10,17 @@ Route::group(['namespace' => 'Staff'], function() {
     Route::post('/book/update/{id}','BookController@update')->name('book.update');
 
 
-    //room route
+    //schedule route
+
+    Route::get('/schedules', 'ScheduleController@index')->name('schedules.index');
+    Route::get('/schedules/{id}/edit','ScheduleController@edit')->name('schedules.edit');
+    Route::get('/schedules/{id}/delete','ScheduleController@destroy')->name('schedules.destroy');
+    Route::get('/schedules/create','ScheduleController@create')->name('schedules.create');
+    Route::post('/schedules/create','ScheduleController@store')->name('schedules.store');
+    Route::post('/schedules/update','ScheduleController@update')->name('schedules.update');
+
+
+     //room route
 
     Route::get('/rooms', 'RoomController@index')->name('rooms.index');
     Route::get('/rooms/{id}/edit','RoomController@edit')->name('rooms.edit');
@@ -18,6 +28,18 @@ Route::group(['namespace' => 'Staff'], function() {
     Route::get('/rooms/create','RoomController@create')->name('rooms.create');
     Route::post('/rooms/create','RoomController@store')->name('rooms.store');
     Route::post('/rooms/update','RoomController@update')->name('rooms.update');
+
+    //student information
+    Route::get('/student', 'StudentInfController@index')->name('student.index');
+    Route::post('/uploadFile', 'StudentInfController@uploadFile');
+
+    //staff information
+    Route::get('/staff', 'StaffInfController@index')->name('staff.index');
+    Route::post('/uploadFile', 'StaffInfController@uploadFile');
+
+
+
+
 
 
 

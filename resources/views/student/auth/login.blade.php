@@ -61,10 +61,10 @@
                                     {{ __('Login') }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('student.password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
+                                <a class="btn btn-primary" href="{{ route('student.register') }}">
+                                    {{ __('Register') }}
                                 </a>
-                                <a class="nav-link" href="{{ route('student.register') }}">{{ __('Register') }}</a>
+                               
 
                             </div>
                         </div>
